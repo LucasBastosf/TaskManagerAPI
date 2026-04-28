@@ -1,0 +1,15 @@
+<form (ngSubmit)="salvar()">
+  <label>Título:</label>
+  <input [(ngModel)]="task.titulo" name="titulo" />
+
+  <label>Descrição:</label>
+  <textarea [(ngModel)]="task.descricao" name="descricao"></textarea>
+
+  <label>Status:</label>
+  <select [(ngModel)]="task.status" name="status">
+    <option value="pendente">Pendente</option>
+    <option value="concluída">Concluída</option>
+  </select>
+
+  <button type="submit">Salvar</button>
+</form>
